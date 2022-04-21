@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<title>制作注册验证</title>
+	<link href="css/reg.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="main"><img src="images/top.jpg"  alt="top"/>
+	<form action="" method="post" id="myform">
+		<dl>
+			<dt class="left">用户名：</dt>
+			<dd><input id="user" type="text" class="inputs" onblur="checkUser()" onfocus="showUser()" /><div id="user_prompt" class="prompt"></div></dd>
+		</dl>
+		<dl>
+			<dt class="left">密码：</dt>
+			<dd><input id="pwd" type="password"  class="inputs" onblur="checkPwd()" onfocus="showPwd()" /><div id="pwd_prompt" class="prompt"></div></dd>
+		</dl>
+		<dl>
+			<dt class="left">&nbsp;</dt>
+			<dd><input name="submit" type="image" src="images/sumbit_btn.jpg" /></dd>
+		</dl>
+	</form>
+</div>
+<script src="js/export.js"></script>
+</body>
+</html>
+<!--
+	1.B
+	2.C
+	3.C
+	4.B
+	4.B
+	简答：
+	1.优点：比使用第三方库或者插件加载的文件少，服务器压力小，样式灵活，对于需要检查内容较少的表单比较适合
+	  缺点：代码手写的代码量多，需要熟悉正则表达式，出错率和开发效率较低
+
+	2.ECMAScript5中引入的严格模式，通过让JavaScript运行环境对一些开发过程中最常见和不易发现的错误做出
+	和当前不同的处理，来让开发者拥有一个”更好”的JavaScript语言。
+
+	作用：
+	消除Javascript语法的一些不合理、不严谨之处，减少一些怪异行为
+	消除代码运行的一些不安全之处，保证代码运行的安全
+	提高编译器效率，增加运行速度；
+	为未来新版本的Javascript做好铺垫。
+
+	和普通模式的区别：
+	1、 没有声明就赋值的变量
+		普通模式：默认为全局变量
+		严格模式： 禁止
+	2、 this不可以指向全局变量
+		因此使用构造函数时忘了加new ，会报错
+	3、删除变量
+		必须设定configurable = true
+	4、报错
+		普通模式：对只读属性赋值，只会默默失败
+		严格模式：报错
+	5、重名属性
+		普通模式：后面的覆盖前面的
+		严格模式：报错
+	6、函数的重名参数
+		普通模式： 不报错，可以通过arguments的index获取。
+		严格模式：报错
+	7、整数格式
+		普通模式： 第一位为0，表示八进制。
+		严格模式：第一位不可以为0
+	8、arguments关键词
+		不可以用来作为变量/函数名
+	9、块级作用域不可以声明函数
+-->

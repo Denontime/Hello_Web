@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马平帅2021.1.30作业</title>
+</head>
+
+<body>
+    <!--
+        选择题：1.A 2.B 3.B 4.A
+        判断题：1.X 2.X 3.√ 4.√ 5.√
+    -->
+    <script type="text/javascript">
+        // 1.
+        var date = new Date();
+        (() => {
+            const year = date.getFullYear();
+            let month = (date.getMonth() + 1).toString();
+            let day = date.getDate().toString();
+            let hour = date.getHours().toString();
+            let minute = date.getMinutes().toString();
+            let second = date.getSeconds().toString();
+
+            function Length_completion(project) {
+                if (project.length < 2) {
+                    return `0${project}`;
+                } else {
+                    return project;
+                }
+            }
+
+            month = Length_completion(month);
+            day = Length_completion(day);
+            hour = Length_completion(hour);
+            minute = Length_completion(minute);
+            second = Length_completion(second);
+
+            document.write(`第一题：<br/>`);
+            document.write(`${year}年${month}月${day}日<br/>`);
+            document.write(`${month}/${day}/${year}<br/>`);
+            document.write(`${year}-${month}-${day} ${hour}:${minute}:${second}<br/>`);
+        })();
+
+        // 2. 
+        (() => {
+            let array_asce = new Array("80", "16", "50", "6", "100", "1");
+            let array_desc = new Array("80", "16", "50", "6", "100", "1");
+            array_asce.sort(function (a, b) {
+                return a - b;
+            });
+            array_desc.sort(function (a, b) {
+                return b - a;
+            });
+            document.write("<br />第二题：<br />");
+            document.write("升序：<br />");
+            for (let i = 0; i < array_asce.length; i++) {
+                document.write(`${array_asce[i]}<br />`);
+            }
+            document.write("降序：<br />");
+            for (let i = 0; i < array_desc.length; i++) {
+                document.write(`${array_desc[i]}<br />`);
+            }
+        })();
+
+        // 3.
+        (() => {
+            let str = "86-010-85468578";
+            document.write('<br />第三题：<br />');
+            document.write(str.split("-") + '<br />');
+            document.write(str.split("") + '<br />');
+            document.write(str.split("").slice(0, 3) + '<br />');
+        })();
+        // 4.
+        (() => {
+            let random_num = Math.floor(Math.random() * 10 + Math.random());
+            document.write("<br />第四题：<br />");
+            document.write(random_num + '<br />');
+        })();
+        // 5.
+        (() => {
+            let day = date.getDay() + 1;
+            document.write("<br />第五题：<br />");
+            switch (day) {
+                case 0:
+                    document.write("今天是星期日")
+                    break;
+                case 1:
+                    document.write("今天是星期一")
+                    break;
+                case 2:
+                    document.write("今天是星期二")
+                    break;
+                case 3:
+                    document.write("今天是星期三")
+                    break;
+                case 4:
+                    document.write("今天是星期四")
+                    break;
+                case 5:
+                    document.write("今天是星期五")
+                    break;
+                case 6:
+                    document.write("今天是星期六")
+                    break;
+            }
+        })();
+    </script>
+</body>
+
+</html>

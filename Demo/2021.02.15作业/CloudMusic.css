@@ -1,0 +1,355 @@
+body, html {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body,textarea,select,input,button {
+	color: #333;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+em,i {
+	font-style: normal;
+	text-align: left;
+	font-size: inherit;
+}
+
+li,s {
+	list-style: none;
+}
+
+a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+img, .txt {
+    display: block;
+    border: 0;
+}
+
+input:focus,textarea:focus,span:focus,a:focus,button:focus {
+    outline:none;
+}
+
+.top {
+    width: 100%;
+    height: 105px;
+}
+
+.top-head {
+    width: 100%;
+    height: 70px;
+    background: #242424;
+}
+
+.top-head-box {
+    width: 1100px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    width: 176px;
+    height: 69px;
+    background-position: 0 0;
+}
+
+.logo a{
+    padding-right: 20px;
+}
+
+.top-head-list li,
+.top-head-list li span,
+.top-head-list a,
+.top-head-list a em {
+    float: left;
+    color: azure;
+    height: 70px;
+    font-size: 14px;
+}
+
+.top-head-list {
+    margin: 0;
+}
+
+.top-head-list li {
+    position: relative;
+    display: list-item;
+    background-position: right -300px;
+}
+
+.top-head-list a {
+    padding: 0 19px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.top-head-list a:hover {
+    background-color: #000;
+}
+
+.srch-box {
+    float: right;
+    position: relative;
+    width: 158px;
+    height: 32px;
+    margin-top: 19px;
+    background-color: #fff;
+    border-radius: 32px;
+}
+
+.srch-box img {
+    position: absolute;
+    margin: 10px 0 0 10px;
+}
+
+.srch-box .srch {
+    float: left;
+    display: block;
+    position: relative;
+    margin: 8px 0 0 30px;
+}
+
+.srch-box .srch input {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 16px;
+    background: transparent;
+}
+
+.srch-box .srch label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    color: #9b9b9b;
+    cursor: text;
+}
+
+.creator {
+    float: right;
+    position: relative;
+    width: 90px;
+    height: 32px;
+    margin: 19px 0 0 12px;
+    box-sizing: border-box;
+    border: 1px solid #4F4F4F;
+    padding-left: 16px;
+    background-color: #333;
+    border-radius: 20px;
+}
+
+.creator:hover {
+border: 1px solid #FFF;
+}
+
+.creator a {
+    color: #fff;
+    line-height: 33px;
+    text-decoration: none;
+}
+
+.login {
+    float: right;
+    position: relative;
+    width: 30px;
+    height: 32px;
+    margin: 19px 0 0 12px;
+}
+
+.login a {
+    line-height: 33px;
+    text-decoration: none;
+    color: #787878;
+}
+
+.login a:hover {
+    color: rgb(196, 192, 192);
+}
+
+.top-bottom {
+    z-index: 90;
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: #C20C0C;
+    border-bottom: 1px solid #a40011;
+}
+
+.top-bottom-list-box {
+    width: 1100px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.top-bottom-list {
+    margin: 0;
+    float: left;
+    padding-left: 180px;
+}
+
+.top-bottom-list li {
+    float: left;
+    height: 34px;
+    text-align: center;
+}
+
+.top-bottom-list a {
+    float: left;
+    height: 34px;
+    color: #fff;
+    text-align: center;
+}
+
+.top-bottom-list a em {
+    display: inline-block;
+    height: 20px;
+    padding: 0 13px;
+    margin: 7px 17px 0;
+    border-radius: 20px;
+    line-height: 21px;
+}
+
+.image-box {
+    width: 100%;
+    height: 285px;
+}
+
+/* .image-box::before {
+    content: '';
+    width: 100%;
+    height: 285px;
+    position: absolute;
+    background-image:url(http://p1.music.126.net/QhjHKvpvleiNTeYLPogdFg==/109951165710641412.jpg);
+    background-size: 10000px;
+    background-position: center center;
+    filter: blur(7px);
+    -webkit-filter: blur(9px);
+} */
+
+.image-box-center {
+    position: relative;
+    display: block;
+    width: 982px;
+    height: 285px;
+    margin: 0 auto;
+}
+
+.image img {
+    display: block;
+    width: 730px;
+    height: 285px;
+}
+
+.image-right, .image-left {
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    width: 37px;
+    height: 63px;
+    text-indent: -9999px;
+    background: url(image/banner.png) 0 9999px no-repeat;
+}
+
+.image-left {
+    left: -68px;
+    background-position: 0 -360px;
+}
+
+.image-right {
+    right: -68px;
+    background-position: 0 -508px;
+}
+
+.download {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    right: -1px;
+    width: 254px;
+    height: 285px;
+    background: url(https://s2.music.126.net/style/web2/img/index/download.png?78f5c818e0dc5e3d8ff8f9ec726af11d) no-repeat 0 0;
+}
+
+.download a {
+    display: block;
+    width: 215px;
+    height: 56px;
+    margin: 186px 0 0 19px;
+    background-position: 0 9999px;
+    text-indent: -9999px;
+    display: block;
+    width: 215px;
+    height: 56px;
+    margin: 186px 0 0 19px;
+    background-position: 0 9999px;
+    text-indent: -9999px;
+}
+
+.download p {
+    margin: 10px auto;
+    text-align: center;
+    color: #8d8d8d;
+}
+
+.shadow, .shadowr {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 20px;
+    height: 285px;
+    background-position: -1px 0;
+}
+
+.shadow {
+    background: url(image/banner.png) 0 9999px no-repeat;
+}
+
+.shadowr {
+    left: auto;
+    right: -20px;
+    background-position: -20px 0;
+    background: url(image/banner.png) 0 9999px no-repeat;
+}
+
+.AAAA li {
+    display: inline-flex;
+}
+
+.AAAA li div {
+    display: contents;
+    width: 350px;
+    height: 170px;
+}
+
+.AAAA img {
+    width: 150px;
+    height: 150px;
+}
+
+.AAAA p {
+    width: 350px;
+    height: 160px;
+    font-size: 18px;
+    padding-left: 10px;
+    margin: 0;
+}

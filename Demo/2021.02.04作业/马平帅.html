@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马平帅作业</title>
+</head>
+
+<body>
+    <!--
+        选择题：
+        1.ABCD(组织？阻止) 2.A 3.A 4.C 5.ABCD
+        简答题：
+        1.让子类的原型等于父类的实例
+        2.利用call()借用父类的构造函数初始化相同的属性
+    -->
+    <script>
+        function Animal(name, age, color) {
+            this.name = name;
+            this.age = age;
+            this.color = color;
+        }
+
+        function Poultry(name, age, color, leg) {
+            Animal.call(this, name, age, color);
+            this.leg = leg;
+            this.info = function () {
+                document.write(`我是一个${this.color}的${this.name}，我已经${this.age}岁了，我有${this.leg}条腿<br />`);
+            }
+        }
+
+        let Poultry_dog = new Poultry("小狗狗", "1", "灰色", "4");
+        Poultry_dog.info();
+
+        let Poultry_cat = new Poultry("茶杯猫", "2", "白色", "4");
+        Poultry_cat.info();
+
+        let Poultry_hen = new Poultry("母鸡", "1", "红色", "2");
+        Poultry_hen.info();
+    </script>
+</body>
+
+</html>
