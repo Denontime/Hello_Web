@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 1px;
+			padding: 1px;
+		}
+
+		p {
+			font-size: 20px;
+			color: black;
+
+		}
+
+		p:nth-child(odd) {
+			color: blue;
+		}
+
+		p:first-child {
+			color: yellow;
+		}
+
+		div {
+			color: black;
+			font-size: 15px;
+		}
+
+		.content {
+			color: red;
+		}
+
+		#selector {
+
+			color: green;
+		}
+
+		.compare {
+			display: flex;
+			max-width: 200px;
+			border: 1px solid orange;
+
+		}
+
+		span[customize="1"] {
+			max-width: 200px;
+			border: 1px solid orange;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="selector" class="content">
+		<p>一、选择器类型</p>
+		　　1、ID　　#id</br>
+		　　2、class　　.class</br>
+		　　3、标签　　p/div/span/...</br>
+		　　4、通用　　*</br>
+		　　<span customize="1">5、属性　　[type="text"]</span></br></span>
+		　　6、子选择器、相邻选择器</br>
+
+		<p>二、权重计算规则</p>
+
+		第一等：代表内联样式，如: style=””，权值为1000。</br>
+		第二等：代表ID选择器，如：#content，权值为0100。</br>
+		第三等：代表类，属性选择器，如.content，权值为0010。</br>
+		第四等：代表元素选择器，如div p，权值为0001。</br>
+		第五等：通配符、子选择器、相邻选择器等的。如*、>、+,权值为0000。</br>
+		第六等：继承的样式没有权值。</br>
+
+		<p>三、比较规则</p>
+
+		1,0,0,0 > 0,99,99,99，也就是说从左往右逐个等级比较，前一等级相等才往后比</br>
+
+		<div class="compare">
+			1， 0 ， 0， 0</br>
+			0, 99 ， 99 ， 99</br>
+		</div>
+		!important 的作用是提升优先级，加了这句的样式的优先级是最高的</br>
+	</div>
+</body>
+
+</html>

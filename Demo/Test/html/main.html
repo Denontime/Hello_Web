@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>马平帅2021.01.13作业</title>
+</head>
+
+<body>
+	<!--
+	一、选择题
+	1.A
+	2.B
+	3.C
+	二、简答题
+	1.a = 2, b = 1, c = 3, d = 4 || a = 3, b = 0, c = 4, d = 3
+	2.5
+	3.5
+	4.a===b的结果是false，a==b的结果是true;===可以理解为“真相等”，也就是说类型和值都相等，程序会先判断类型，
+	类型不同即输出false，==可以理解为值比较，可转换的内容编译器会自动进行转换，然后进行比较
+	-->
+	<button onmouseout="small(this)" onmouseover="big(this)" onclick="choice()">区号查询</button>
+
+
+	<script>
+		function big(btn) {
+			btn.style.height = "700px";
+			btn.style.width = "1000px";
+			btn.style.color = "red";
+		}
+
+		window.onload = function move(btn) {
+			alert("window onload!");
+		}
+
+		function small(btn) {
+			btn.style.height = "25px";
+			btn.style.width = "70px";
+			btn.style.color = "gray";
+		}
+
+		function choice() {
+			var area_code = prompt("请输入区号：")
+			switch (area_code) {
+				case "0951":
+					alert("0951是银川的区号.");
+					break;
+				case "0952":
+					alert("0952是石嘴山的区号.");
+					break;
+				case "0953":
+					alert("0953是吴忠的区号.");
+					break;
+				case "0954":
+					alert("0954是固原的区号");
+					break;
+				case "0955":
+					alert("0955是中卫的区号.");
+					break;
+				default:
+					alert(area_code + "不是宁夏的区号.");
+			}
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		#body{
+			width: 100%;
+			height: 100%;
+			min-height:700px;
+			position:relative;
+		}
+		img{
+			width:100%;
+			height:100%;
+		}
+			#body .login{
+				width:760px;
+				height: 513px;
+				position:absolute;
+				top:15%;
+				left:27%;
+				border-radius:10px;
+			}
+			#body .login .left{
+				width:333px;
+				height: 513px;
+				background-image:url("https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/02/ChMkJlbKxWCIKI7eABWfMoXXG_QAALHVAGY7wgAFZ9K328.jpg");
+				color:white;
+				overflow: hidden;
+				border-radius: 10px 0 0 10px;
+			}
+				#body .login .left .left_text{
+					margin-left:70px;
+					margin-top:120px;
+					line-height:0.8;
+				}
+				#body .left_text p{
+					font-size:42px;
+				}
+		
+			#body .right{
+				width: 428px;
+				height: 513px;
+				background-color: #8386697d;
+				position:absolute;
+				left:333px;
+				top:0;
+				border-radius:0 10px 10px 0;
+			}
+			.right_text{
+				width:390px;
+				height:440px;
+				margin-top:50px;
+				margin-left:25px;
+			}
+			.right_text_top{
+				width:390px;
+				height:60px;
+				border-bottom: 1px solid #DBDBDB ;
+			}
+			.right_text_toptext{
+				border-bottom: 3px solid #87CEFA;
+				width:170px;
+				height:43px;
+				padding-top:15px;
+				text-align:center;
+			}
+				.right_text_toptext span{
+					margin-top:10px;
+					font-size:24px;
+					color:#87CEFA;
+				}
+			.right_text_middle{
+				padding: 30px 0px 60px 0px;
+				width:390px;
+				height:380px;
+				}
+	input{
+		border:0;
+		width:300px;
+		margin-left:30px;
+		height:30px;
+	}
+	</style>
+</head>
+<body>
+	<div id="body">
+		<img src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/02/ChMkJlbKxWCIKI7eABWfMoXXG_QAALHVAGY7wgAFZ9K328.jpg" />
+		<div class="login">
+			<div class="left">
+				<div class="left_text">
+				    <p>轻</p>
+				    <p>聊</p>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right_text">
+					<div class="right_text_top">
+						<div class="right_text_toptext">
+						<span>账号密码登录</span>
+						</div>
+					</div>
+					<div class="right_text_middle">
+						<div style="height:40px;width:390px;border: 1px solid #DBDBDB ;border-radius:8px;">
+						<input style="border:0;width:340px;height:30px;margin:5px 0 0 40px;" type="text" placeholder="请输入企业帐号/绑定在成员帐号的手机/邮箱"></input>
+						<svg style="width:20px;height:20px;color:gray;position:absolute;top:151px;left:40px;opacity:0.3" viewBox="0 0 1024 1024"><path d="M991.154 442.976L602.927 38.893C578.804 13.806 546.557 0 511.996 0s-66.81 13.804-90.929 38.893L32.841 442.976c-40.061 41.71-34.904 77.76-28.281 92.817 4.721 10.685 20.656 40.054 66.559 40.054h56.904V886.7c0 70.576 50.683 137.027 122.71 137.027H416.003v-73.042l0.002-255.935c0-35.267-5.343-54.92 30.686-54.92h130.614c36.031 0 30.686 19.654 30.686 54.92v328.981H773.26c72.029 0 122.715-66.45 122.715-137.027V575.849h56.9c45.905 0 61.843-29.369 66.561-40.054 6.62-15.059 11.778-51.11-28.281-92.819z"></path></svg>
+						</div>
+						<div style="height:40px;width:390px;margin-top:30px;border: 1px solid #DBDBDB ;border-radius:8px;">
+						<input style="border:0;width:340px;height:30px;margin:5px 0 0 40px;" placeholder="请输入密码" type="text"></input>
+						<svg style="width:20px;height:20px;color:gray;position:absolute;top:223px;left:39px;opacity:0.3" viewBox="0 0 1024 1024"><path d="M845.552 430.624h-71.848V262.816C773.704 122.288 659.968 8 520.04 8c-139.944 0-253.8 114.288-253.8 254.832v167.8h-71.784c-34.616 0-62.672 28.16-62.672 62.928V953c0 34.824 28.064 63.008 62.672 63.008h651.16c34.616 0 62.6-28.184 62.6-63.008V493.56c0-34.776-28.048-62.936-62.664-62.936zM555.216 735.248v100.32a8.28 8.28 0 0 1-8.208 8.264h-53.88a8.32 8.32 0 0 1-8.272-8.256V735.248c-25.312-13-42.84-39.056-42.84-69.592 0-43.208 34.928-78.36 77.968-78.36 43.096 0 78.04 35.144 78.04 78.344 0.048 30.552-17.48 56.608-42.808 69.608z m121.128-304.624h-312.64V266.976c0-86.56 70.208-157.056 156.392-157.056s156.256 70.496 156.256 157.056v163.648h-0.008z m0 0"></path></svg>
+						</div>
+						<div style="padding-top:15px;padding-left:20px;padding-bottom:40px;">
+						<p style="font-size:14px;line-height:16px;"><input type="checkbox" />使用成员账号登录</p>
+						<span style="font-size:14px;line-height:16px;"><input type="checkbox" />两周内免密登录<a href="#" style="float:right;color:gray;font-size:13px;">忘记密码？</a></span>
+						</div>
+
+						<button style="width:390px;height:50px;background-color:#87CEFA;text-align:center;line-height:45px;border-radius:9px;color:white;font-size:24px;" type="submit" value="提交">登录</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

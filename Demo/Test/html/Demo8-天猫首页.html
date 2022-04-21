@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font: 12px/1.5 "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+        }
+        body, p, ul, input {
+            margin: 0;
+            padding: 0;
+        }
+        a, a:hover{
+            text-decoration: none;
+        }
+        img {
+            margin-top: -2px;
+        }
+        #site-nav {
+            height: 32px;
+            line-height: 32px;
+            background-color: #f2f2f2;
+            border-bottom: 1px solid #e5e5e5;
+            color: #999;    
+            padding: 0 10px;
+        }
+
+        .sn-container {
+            width: 1230px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .login {
+            padding: 0 20px;
+        }
+        .login-info a{
+            color: #999;
+            cursor: pointer;
+        }
+        .login-info a:hover{
+            color: #ff0000;
+        }
+        .sn-quick-menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+
+        .sn-quick-menu li{
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        .sn-quick-menu img {
+            vertical-align: middle;
+            margin-right: 2px;
+        }
+
+        #header {
+            padding-top: 38px;
+            height: 130px;
+        }
+
+        .search-container {
+            margin: 0 auto;
+            width: 625px;
+            height: 36px;
+            line-height: 36px;
+            border: solid #FF0036;
+            border-width: 2px 0 2px 2px;
+        }
+
+        .search-input{
+            height: 36px;
+            width: 491px;
+            font: 16px/22px arial;
+            box-sizing: border-box;
+            background: 0 0;
+            color: #000;
+            margin: 0;
+            z-index: 2;
+            line-height: 20px;
+            padding: 5px 3px 5px 5px;
+            outline: 0;
+            border: none;
+        }
+
+        .search-btn {
+            float: right;
+            width: 132px;
+            height: 36px;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            border: 0;
+            font-size: 16px;
+            letter-spacing: 4px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #FF0036;
+        }
+        .title-con {
+            margin: 0 auto;
+            width: 1230px;
+        }
+        .title-nav {
+            white-space: nowrap;
+            height: 35.5px;
+            background-color: #fff;
+            border-style: solid;
+            border-width: 0 0 1.5px;
+            border-color: #e5e5e5;
+            cursor: pointer;
+            width: 1030px;
+            display: flex;
+            margin-left: 200px;
+        }
+        .title-nav a {
+            height: 35px;
+            line-height: 35px;
+            padding: 0 8px;
+            font-weight: 500;
+            font-size: 16px;
+            display: block;
+            color: #333;
+            letter-spacing: normal;
+        }
+        .title-nav a img {
+            width: 100px;
+            height: 30px;
+            margin-top: 3px;
+            display: block;
+        }
+        .container {
+            width: 1280px;
+            margin: 0 auto;
+        }
+        .category-con {
+            position: relative;
+        }
+
+        .category{
+            position: absolute;
+            top: -169px;
+            left: 75px;
+        }
+
+        .category-type {
+            width: 200px;
+            height: 36px;
+            color: #fff;
+            list-style: none;
+            margin-left: 45px;
+            margin-top: -2px;
+            background-color: #FF0036;
+            position: absolute;
+            z-index: 100;
+            line-height: 36px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main-page">
+        <div id="site-nav">
+            <div class="sn-container">
+                <div class="login-info">
+                    喵，欢迎来天猫
+                    <a href="#" class="login">请登录</a>
+                    <a class="register">免费注册</a>
+                </div>
+                <ul class="sn-quick-menu">
+                    <li>我的淘宝<img src="image/triangle.png"/></li>
+                    <li class="cart"><img src="image/shopping-cart.png"/>购物车</li>
+                    <li>收藏夹</li>
+                    <li><img src="image/phone.png"/>手机版</li>
+                    <li>淘宝网</li>
+                    <li>商家支持<img src="image/triangle.png"/></li>
+                    <li><img src="image/navigation.png"/>网站导航</li>
+                </ul>
+            </div>
+        </div>
+        <div id="header">
+            <div class="search-container">
+                <input placeholder="搜索 天猫 商品/品牌/店铺" class="search-input"/>
+                <button class="search-btn">搜索</button>
+            </div>
+        </div>
+        <div id="content">
+            <div class="title-con">
+                <div class="title-nav">
+                    <a href="#"><img src="image/shopping.png"/></a>
+                    <a href="#"><img src="image/international.png"/></a>
+                    <a href="#">天猫会员</a>
+                    <a href="#">电器城</a>
+                    <a href="#">喵鲜生</a>
+                    <a href="#">医药馆</a>
+                    <a href="#">营业厅</a>
+                    <a href="#">魅力惠</a>
+                    <a href="#">飞猪旅行</a>
+                    <a href="#">苏宁易购</a>
+                </div>
+            </div>
+            <div class="category-con">
+                <img src="image/main.jpg" width="100%"/>
+                <div class="container">
+                    <div class="category">
+                        <img src="image/category.gif"/>
+                        <ul class="category-type">
+                            <li>商品分类</li>
+                            <li>商品分类</li>
+                            <li>商品分类</li>
+                            <li>商品分类</li>
+                            <li>商品分类</li>
+                            <li>商品分类</li>
+                            <li>商品分类</li>
+                            <li>商品分类</li>
+                            <li>商品分类</li>
+                            <li>商品分类</li>
+                        </ul> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

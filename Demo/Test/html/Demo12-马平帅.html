@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM time test</title>
+</head>
+
+<body>
+	<p id="Content"></p>
+	<button>开始</button>
+	<button>停止</button>
+	<b style="color: red;">hello</b>
+	<script type="text/javascript">
+		var time;
+		var p = document.getElementById("Content");
+		var btn = document.getElementsByTagName("button");
+		btn[0].onclick = function () {
+			time = setInterval(function () {
+				var date = new Date();
+				var str = "当前时间：" + date.getFullYear() + "-" + date.getMonth() + 1 + "-" + date.getDate() + " " +
+					date.getHours() + ":" +
+					date.getMinutes() + ":" + date.getSeconds();
+				p.innerHTML = str;
+			}, "1000");
+		}
+		btn[1].onclick = function () {
+			clearInterval(time);
+		}
+	</script>
+</body>
+
+</html>
+<!--
+1.A 
+2.C
+3.AD
+4.B
+5.D
+简答：
+setTimeout(表达式，time) 经过time时间后执行表达式
+setInterval（表达式，time） 间隔time时间重复执行表达式
+-->
