@@ -248,11 +248,11 @@ body {
 
 .tree {
 	position: fixed;
-	right: 3%;
-	bottom: 3%;
+	right: 1%;
+	bottom: -1%;
 }
 
 .tree img {
-	width: 70%;
-	height: 70%;
+	width: 50%;
+	height: 50%;
 }
